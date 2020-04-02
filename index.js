@@ -1,2 +1,11 @@
+function fetchIssues[]{
+    var issues = JSON.parse(localStorage.getItem('issues'));
+    var issuesList = document.getElementById['issuesList'];
 
+    issuesList.innerHTML ='';
+
+    for(var i =0;i < issues.length; i++){
+        var id =issues [i].id ;
+    }
+    }
 
