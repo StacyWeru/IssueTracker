@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <title>Java Issue Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1> JS Issue Tracker <small> by StacyWeru.com</small></h1>
+    </div>
+    <div class="jumbotron">
+        <h2>Add New Issues</h2>
+        <form id ="issueInputForm">
+            <div class ="form-group">
+                <label for="issueDescInput">Description</label>
+                <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the Issue..">
+          </div>
+          <div class ="form-group">
+            <label for="issueSeverityInput">Severity</label>
+          <select id="issueSeverityInput" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+          </select>
+      </div>
+      <div class ="form-group">
+        <label for="issueDescInput">Description</label>
+        <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the Issue..">
+  </div>
+        </form>
+    </div>
+
+    <script src ="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"> </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
