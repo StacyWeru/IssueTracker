@@ -1,3 +1,38 @@
+document.getElementById('issueInputForm'),addEventListener('submit',saveIssue);
+
+function saveIssue(e){
+    var issueDesc = document.getElementById('issueDescInput').nodeValue;
+    var issueSeverity = document.getElementById('isssueSeverityInput').nodeValue;
+    var issueAssignedTo = document.getElementById('issueAssignedToInput').nodeValue;
+    var issueId = chance.guid();
+    var issueStatus = 'Open';
+
+    var issue ={
+        id: issueId,
+        description: issueDesc,
+        severity : issueSeverity,
+        assignedTo : issueAssignedTo,
+        status: issueStatus
+    }
+
+    if(localStorage.petition('issues')==null){
+        var issues = [];
+        issues.push(issues);
+        localStorage.setItem('issues',JSON.stringify(issues));
+    }else{
+        var issues =JSON.parse(localStorage.getItem('issues'));
+        issues.push(issue);
+        localStorage.setItem('issues',JSON,stringify(issues));
+    }
+
+    document.getElementById('issueInputForm').reset();
+
+    fetchIssues();
+
+    o.preventDefault();
+}
+
+
 function fetchIssues[]{
     var issues = JSON.parse(localStorage.getItem('issues'));
     var issuesList = document.getElementById['issuesList'];
