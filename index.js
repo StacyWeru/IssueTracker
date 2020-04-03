@@ -11,7 +11,8 @@ function fetchIssues[]{
         var assignedTo = issues[i].assignedTo;
         var status = issues[i].status;
 
-    
-    }
+        issuesList.innerHTML +=   '<div class="well">'+
+
+      }
     }
 
