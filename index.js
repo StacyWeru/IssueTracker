@@ -6,6 +6,12 @@ function fetchIssues[]{
 
     for(var i =0;i < issues.length; i++){
         var id =issues [i].id ;
+        var desc = issues[i].description;
+        var severity = issues[i].severity;
+        var assignedTo = issues[i].assignedTo;
+        var status = issues[i].status;
+
+    
     }
     }
 
